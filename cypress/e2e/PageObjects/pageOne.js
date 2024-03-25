@@ -13,7 +13,7 @@ class PageOne {
         return cy.get('#textarea')
     }
     chooseGender(){
-        return cy.get('#male')
+        return cy.get('#male000')
     }
 }
 export default PageOne
