@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-03-27T13:08:04.796Z",
+    "end": "2024-03-27T13:08:05.186Z",
+    "duration": 390,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6d66ba98-23ec-44cd-bbe0-3e2795fd65f8",
+      "title": "",
+      "fullFile": "cypress\\e2e\\FrameworkPortal\\department.cy.js",
+      "file": "cypress\\e2e\\FrameworkPortal\\department.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "39df547a-9be2-458a-a328-028b9a2da13e",
+          "title": "add department page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verify user can login successfully ",
+              "fullTitle": "add department page verify user can login successfully ",
+              "timedOut": null,
+              "duration": 274,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://hq.it-cores.com:8800/');\ncy.get(':nth-child(1) > :nth-child(2) > .formInput').type('admin');\ncy.get('.group-control > :nth-child(2) > .w-100').type('@dm!n@C0r$951%');\ncy.get('.col-12 > .w-100').click();\ncy.xpath(\"//span[normalize-space()='Master Data']\").click();\ncy.xpath(\"//span[normalize-space()='Departments']\").click();\ncy.xpath(\"//span[normalize-space()='Create New']\").click();\ncy.get(\"input[placeholder='English Description']\").type(\"desc1\");\ncy.get(\"input[placeholder='Arabic Description']\").type(\"desc2\");\ncy.xpath(\"//span[normalize-space()='Save']\").click();",
+              "err": {
+                "message": "TypeError: cy.xpath is not a function",
+                "estack": "TypeError: cy.xpath is not a function\n    at Context.eval (webpack://cyTest/./cypress/e2e/FrameworkPortal/department.cy.js:7:11)",
+                "diff": null
+              },
+              "uuid": "7181e201-2f97-49ca-8066-b436db23645b",
+              "parentUUID": "39df547a-9be2-458a-a328-028b9a2da13e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "7181e201-2f97-49ca-8066-b436db23645b"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 274,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "my-report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "json": true,
+        "reportsDir": "reports/Reports",
+        "reportFilename": "my-report",
+        "overwrite": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}
